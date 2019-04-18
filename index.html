@@ -1,371 +1,247 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>T-shirt Printing</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a href=""><h1>MJLD</h1></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a>
-										<li class="nav-item"><a class="nav-link" href="project-details.html">Project Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-           	<div class="box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<!-- <h3>Nature <br />Photoshoot</h3>
-							<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p> -->
-							<a class="main_btn" href="#">Explore Gallery</a>
-						</div>
-					</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Flash Photography</title>
+	<meta name="description" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+	
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+	
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Normalize/Reset CSS-->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+
+<body id="welcome">
+	
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li class="current"><a href="#welcome">Welcome</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#tmpl-structure">Structure</a></li>
+				<li><a href="#css-structure">CSS Files</a></li>
+				<li><a href="#javascript">JavaScript Libraries</a></li>
+				<li><a href="#contact-form">Contact Form</a></li>
+				<li><a href="#subscription-form">Subscription Form</a></li>
+				<li><a href="#video">Video Tutorial</a></li>
+				<li><a href="#credit">Source and Credit</a></li>
+			</ul>
+		</nav>
+	</aside>
+	
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>Flash Photography Html5 Responsive Template</h1>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Home Blog Area =================-->
-        <section class="home_blog_area pad_top">
-        	<div class="container">
-        		<div class="home_blog_inner">
-        			<div class="row h_blog_item">
-        				<div class="col-lg-6">
-							<div class="h_blog_img">
-								<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/53894635_266684644259662_7015493821458808832_n.jpg?_nc_cat=110&_nc_eui2=AeEUp5yE4K20N6WhwgXaGzAfC0k4_dX-h58UlL2SQr80hc7Rh7DtVvb0Sh1tlpeGxCTrawLCx2gVPZJa2l4JHOjYhXVifTFqIhCMZrF97ofxwgvl6IEO0HXA0jKEt2jQXa0&_nc_ht=scontent.fmnl3-2.fna&oh=cfc8cf2e75d6dc26a8471e9646b72d5c&oe=5D335DF3" alt="">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="h_blog_text">
-								<div class="h_blog_text_inner left">
-									<h4>Spreading <br />Peace to world</h4>
-									<p>If you are looking at blank cassette on the web you may be very confused at the difference in price you may see some.</p>
-									<a class="main_btn2" href="#">Explore Gallery</a>
-								</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="row h_blog_item">
-						<div class="col-lg-6">
-							<div class="h_blog_text">
-								<div class="h_blog_text_inner right">
-									<h4>Spreading <br />Peace to world</h4>
-									<p>If you are looking at blank cassette on the web you may be very confused at the difference in price you may see some.</p>
-									<a class="main_btn2" href="#">Explore Gallery</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="h_blog_img">
-								<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49913065_232517284343065_4674329868786204672_n.jpg?_nc_cat=102&_nc_eui2=AeF6BD08M10AteSQxW1hIQIq2ky4FFnr4Q5MNZzvZm_iTbnY8R8fzNQ-cTm6hWepHNfhSgXLu21d5Pynybh1FBPWxDPulmPD9nR6uvd08UpdCAeqjG7yMRYN02TbGgu68lY&_nc_ht=scontent.fmnl3-2.fna&oh=c4e750c1261ea4269c117d12c73c32a9&oe=5D3D8DE7" alt="">
-							</div>
-						</div>
-        			</div>
-        			<div class="row h_blog_item">
-        				<div class="col-lg-6">
-							<div class="h_blog_img">
-								<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49900260_232517071009753_2226177958647693312_n.jpg?_nc_cat=104&_nc_eui2=AeHISNNucn2MHMbJYXM8VpJDNmd37DreUly87GSiL7NrgG6xmbR30ae9xSwkXUAwZC6kCcMwGLLwzGgo9UMxf94tA78Xsk-XK2FImdXnrPFuZu_8w1EhJUp24Dn10vvVgqk&_nc_ht=scontent.fmnl3-2.fna&oh=d7d04fa2b6a7e29bc0a2615d40d8ac3a&oe=5D46C036" alt="">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="h_blog_text">
-								<div class="h_blog_text_inner left">
-									<h4>Spreading <br />Peace to world</h4>
-									<p>If you are looking at blank cassette on the web you may be very confused at the difference in price you may see some.</p>
-									<a class="main_btn2" href="#">Explore Gallery</a>
-								</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="row h_blog_item">
-						<div class="col-lg-6">
-							<div class="h_blog_text">
-								<div class="h_blog_text_inner right">
-									<h4>Spreading <br />Peace to world</h4>
-									<p>If you are looking at blank cassette on the web you may be very confused at the difference in price you may see some.</p>
-									<a class="main_btn2" href="#">Explore Gallery</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="h_blog_img">
-								<img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/50227171_232517051009755_5238942988163350528_n.jpg?_nc_cat=103&_nc_eui2=AeEROARDv69MzrDeWSuKaPJasbonSvxRTE3v2pGk9NEskUx4x3iHtwH1rQy8_JEsjkn9X37fNcwI5Ond_sUEpM6hXmRkTzCwnxQzINjPSzUPB9qDiZXwFWNmRmYsC4P4yE0&_nc_ht=scontent.fmnl3-1.fna&oh=9075992b29de1df8b327703fea474d93&oe=5D2BC9E0" alt="">
-							</div>
-						</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Blog Area =================-->
-        
-        <!--================Service Area =================-->
-        <section class="service_area p_120">
-        	<div class="container box_1620">
-        		<div class="main_title">
-        			<h2>Services Offered by Us</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-        		</div>
-        		<div class="row m0 service_inner">
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49899256_232516944343099_6676317208961875968_n.jpg?_nc_cat=109&_nc_eui2=AeH9khUtvrDq4ED4BsGNsqYIKGy119yZSrjhL9wZ1wdwWef8zqynYZkPdE8VNR3-CIwMAGwzOkMbAP204_l37uIcKdgR43jt5dAFx_FIHfx5Xs3CRTXxV7SQtHJnKLASpLo&_nc_ht=scontent.fmnl3-2.fna&oh=0ea00816dde2fea695d222efee988f52&oe=5D3C547D" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Spreading <br />Peace to world</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49946677_232516884343105_1419390200592728064_n.jpg?_nc_cat=100&_nc_eui2=AeEL5E9Meo_Ep5OoFo-CZX7YgyFwN2e_fDS9XVly-3deyGhBrfcp-FDlhwrBo6VUTnkWCvp9dP-Ci7bIBx8rwLNSqw58_MvXsNgHH2hYXwKR-V_R0RMhMhqyvTApmxUIGls&_nc_ht=scontent.fmnl3-2.fna&oh=f6349d20eed5e19cb70356a9c54e5989&oe=5D2FCC71" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Spreading <br />Peace to world</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Spreading <br />Peace to world</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/50431422_232516864343107_1951175579256487936_n.jpg?_nc_cat=101&_nc_eui2=AeEyWb1LsCAqH5Jf1qVn5S5u0pHu3Imxyw3qWadE2moD7w3HrrTg16NKKUMNAFd38uDojOfxwAdHtvhdP3Hq00SzY7io36QkKLnFIxEk_rDS_9z22-rbeD_3kn4mhWMhTfU&_nc_ht=scontent.fmnl3-1.fna&oh=3013d8ab9fdcaf0411d1d1882f825396&oe=5D423CAA" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Spreading <br />Peace to world</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/50000461_232516521009808_1831427802235142144_n.jpg?_nc_cat=104&_nc_eui2=AeEHqi-7oxa6V8heLAXW9HLohwQjwGuvvQKW8ZUIo0xW2YaNV2gn6V8kKRVem7OFNatoUeu7njOQhBbZDobDzWmD_iC5v3wsPxLjKW7agg7fv4xk-KCIqoEdYA0qfQ_kLlA&_nc_ht=scontent.fmnl3-2.fna&oh=fdb2fb2292d1d00797a21298e89492dc&oe=5D36C2C3" alt="">
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Service Area =================-->
-        
-        <!--================Feedback Area =================-->
-        <section class="feedback_area pad_bt">
-        	<div class="container">
-        		<div class="feedback_inner p_100">
-        			<div class="row">
-        				<div class="col-lg-5">
-        					<div class="feedback_text">
-        						<h3>Client’s Feedback</h3>
-        						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderitin.</p>
-        					</div>
-        				</div>
-        				<div class="col-lg-7">
-							<div class="testi_slider_inner">
-								<div class="testi_slider owl-carousel">
-									<div class="item">
-										<div class="media">
-											<div class="d-flex">
-												<img src="img/testimonials/testi-1.jpg" alt="">
-											</div>
-											<div class="media-body">
-												<p>“Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware”.</p>
-												<h4>Mark Alviro Wiens</h4>
-												<h5>CEO at Google</h5>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="media">
-											<div class="d-flex">
-												<img src="" alt="">
-											</div>
-											<div class="media-body">
-												<p>“Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware”.</p>
-												<h4>Mark Alviro Wiens</h4>
-												<h5>CEO at Google</h5>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="media">
-											<div class="d-flex">
-												<img src="img/testimonials/testi-1.jpg" alt="">
-											</div>
-											<div class="media-body">
-												<p>“Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware”.</p>
-												<h4>Mark Alviro Wiens</h4>
-												<h5>CEO at Google</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Feedback Area =================-->
-        
-        <!--================Instagram Area =================-->
-        <section class="instagram_area">
-        	<div class="container box_1620">
-        		<div class="insta_btn">
-        			<a class="btn theme_btn" href="#">T-shirt Design</a>
-        		</div>
-        		<div class="instagram_image row m0">
-        			<a href="#"><img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/50244659_232516511009809_6091863990672031744_n.jpg?_nc_cat=100&_nc_eui2=AeHxTHF9Tt_cp5GSEDVPpdTpC2WV0TKUpBDGQycbsbcFTIvnEpTAKdkeZ1Cl5VnVpGZeikBg4R9hvsMi3P4WJj6flAl6yJvL1gjL6i28izZqIVQcLtVywBMEaHLteFtj89o&_nc_ht=scontent.fmnl3-2.fna&oh=a3b6afe864e830bbe486d80d35a26836&oe=5D321869" alt=""></a>
-        			<a href="#"><img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/49899466_232515777676549_8099916451734880256_n.jpg?_nc_cat=106&_nc_eui2=AeEgS6GsPMgI8Qeb_88mROIxeg7rx1_SDsJQ6GSQnngEK2RHXlVU2pP0JyWMvnMclxnRTUu2Z9we3kSmOH5ty7g74asFIVWc0ebCULEEMEahvuVfofqhLXz6d0vXZL4HGqU&_nc_ht=scontent.fmnl3-1.fna&oh=4cf7e236ad72f654cf176417b9592d85&oe=5D48C3AA" alt=""></a>
-        			<a href="#"><img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/49726408_232516231009837_6473401766825164800_n.jpg?_nc_cat=103&_nc_eui2=AeGHVitQIoLYu1wHQjogkI9H33hY4-6dMhJrRxV4bGt8RcXcvYgczzWpvZzRojkNjmASsS81SIOZklIDGmcN8vMbwp0S4cv4zIZEo-L1BLVOGC-7Rrt-YeKX-dmUye_q75o&_nc_ht=scontent.fmnl3-1.fna&oh=306c8b49ccc78f0e61672f94900446ef&oe=5D340DB6" alt=""></a>
-        			<a href="#"><img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/50458329_232516204343173_6904835165898407936_n.jpg?_nc_cat=110&_nc_eui2=AeHdC6rRM9Rv2x999fYNUAo9YD8HoZ7hWWjPVvqtrfW1X94boGu3vrvAGE9RI0dLQVD_8_A8MdZnzN3AJ4GzrLr8Q8OivWHhkBIBGVelN09H4Sz_k1H6NjB0ZcTMX2jxj0E&_nc_ht=scontent.fmnl3-2.fna&oh=7c989c95fe9af3d9567ea597b5a03586&oe=5D32B1E7" alt=""></a>
-        			<a href="#"><img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49337468_232516164343177_8719396738936340480_n.jpg?_nc_cat=100&_nc_eui2=AeHmWNWLh1u0H6Uv6pDW-gHPThzgn11lwPFwGfNvVXOmsjtm1BxoN-BZQDuHGYHellTN3LZMmkCqfDcMbRVeQWo3tyJIBlyAqUJ_lv6uJgnmPHusckHORLMoGGtkew-9a2E&_nc_ht=scontent.fmnl3-2.fna&oh=7c7c80a0021607b2c408e322013cea0a&oe=5D485B7A" alt=""></a>
-        			<a href="#"><img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/49913102_232516041009856_421335827881132032_n.jpg?_nc_cat=100&_nc_eui2=AeE-QQIL7FYXt_svehckkAi_Bovc323uq-x-79lQEgTQ0NC8ne14ddgI-YXizrt9Ncxno6oMT4dporASh5O24BCnIwhrto47B1J2BLja9sA57OpdGclcykdN91LAE59V8NM&_nc_ht=scontent.fmnl3-2.fna&oh=35a5601fd79db082ba3f5672f6c11ad7&oe=5D2B1553" alt=""></a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Instagram Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+				<div class="welcome">
+					
+					<h2 class="twenty">Welcome To Flash Photography Html5 Responsive Template</h2>
+					<p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
+					<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to email at <code><a href="mailto:support@colorlib.com">support@colorlib.com</a></code> Thank you so much!</p>
+				</div>
+				
+				<div class="features">
+					<h2 class="twenty">Template Features</h2>
+					
+					<ul>
+						<li>Clean &amp; Simple Design</li>
+						<li>HTML5 &amp; CSS3</li>
+						<li>Fully Responsive Design</li>
+						<li>PHP/Ajax Powered Working Contact Form</li>
+						<li>All files are well commented</li>
+						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
+						<li>Extensive Documentation</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section id="installation">
+				<div class="content-header">
+					<h1>Flash Photography Html5 Responsive Template</h1>
+				</div>
+				<h2 class="title">Installing Template.</h2>
+				
+				<div class="section-content">
+					<ol>
+						<li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+						<li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May not wotrk fonts and google map).</li>
+						<li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment for send messages.</li>
+						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
+						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+					</ol>
+				</div>
+				
+			</section>
+			<section id="tmpl-structure">
+				<h2 class="title">Template Structure</h2>
+				<p class="fifteen">All information within the main content area is nested within a body tag. The general template structure is pretty the same throughout the template. Here is the general structure of main page (index.html).</p>
+				            <pre class="brush: html">
+					                <header class="site-header">
+						                
+					                </header>
+					                <main class="site-main">
+						                <section class="section">
+							                
+						                </section>
+						                <section class="section">
+							                
+						                </section>
+						                <section class="section">
+							                
+						                </section>
+					                </main>
+					                <footer class="site-footer">
+						                
+					                </footer>
+				</pre>
+			</section>
+			<section id="css-structure">
+				<h2 class="title">CSS Files and Structure</h2>
+				<p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+				            <pre class="brush: html">
+					<!--
+					CSS
+					============================================= -->
+					<link rel="stylesheet" href="css/linearicons.css">
+					<link rel="stylesheet" href="css/owl.carousel.css">
+					<link rel="stylesheet" href="css/font-awesome.min.css">
+					<link rel="stylesheet" href="css/nice-select.css">
+					<link rel="stylesheet" href="css/magnific-popup.css">
+					<link rel="stylesheet" href="css/bootstrap.css">
+					<link rel="stylesheet" href="css/main.css">
+				</pre>
+				
+				<h2 class="title">Google Web Fonts</h2>
+				
+				<p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+				
+				            <pre class="brush:html">                
+					<!--
+					Google Font
+					=========================== -->
+					                <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600" rel="stylesheet"> 
+				</pre>
+				
+				<p class="twenty">Remember to change the font into <strong>main.css</strong></p>
+			</section>
+			
+			<section id="javascript">
+				<h2 class="title">Javascript Files and Structure</h2>
+				
+				<p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
+					
+					            <pre class="brush: html">
+						<!--
+						JavaScripts
+						========================== -->
+						<script src="js/vendor/jquery-3.3.1.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+						<script src="js/vendor/bootstrap.min.js"></script>
+						<script src="js/jquery.ajaxchimp.min.js"></script>
+						<script src="js/owl.carousel.min.js"></script>
+						<script src="js/jquery.nice-select.min.js"></script>
+						<script src="js/jquery.magnific-popup.min.js"></script>
+						<script src="js/main.js"></script>
+					</pre>
+				</section>
+				
+				<section id="contact-form">
+					<h2 class="title"> Contact Form </h2>
+					<p>This is a PHP Script for sending messages to your email, you should replace <strong>support@colorlib.com</strong> to your email to start receive messages.</p>
+					            <pre class="brush:php">
+						                    $to = 'demo@site.com'; // replace this mail with yours
+						    $firstname = $_POST["fname"];
+						    $email= $_POST["email"];
+						    $headers = 'MIME-Version: 1.0' . "\r\n";
+						    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+						    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+						    $message ='<table style="width:100%">
+							        <tr>
+								            <td>'.$firstname.'  '.$laststname.'</td>
+							        </tr>
+							        <tr><td>Email: '.$email.'</td></tr>
+						    </table>';
+						    if (@mail($to, $email, $message, $headers))
+						    {
+						        echo 'The message has been sent.';
+						    }else{
+						        echo 'failed';
+						    }
+					</pre>
+				</section>
+				<section id="subscription-form">
+					<h2 class="title"> Subscription Form </h2>
+					<p>Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".</p>
+					            <pre class="brush: javascript">
+						        <div id="mc_embed_signup">
+							        //Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
+						        <form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center"></form>
+					        </div>
+				</pre>
+			</section>
+			<section id="video">
+				<h2 class="title"> Video Tutorial </h2>
+				<!-- 21:9 aspect ratio -->
+				<div class="embed-responsive embed-responsive-21by9">
+					<iframe class="embed-responsive-item" width="100%" height="515" src="https://www.youtube.com/embed/i7_PRPLOxVE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section id="credit">
+				<h2 class="title">Source and Credit</h2>
+				<div class="script-source">
+					<ul>
+						<li><a target="_blank" href="http://www.pexels.com">Pexels</a></li>
+						<li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+						<li><a target="_blank" href="http://getbootstrap.com">Bootstrap Framework</a></li>
+						<li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+						<li><a target="_blank" href="https://github.com/iamMonzurul/jQuery-AJAX-MailChimp">Ajax Mailchimp</a></li>
+						<li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+						<li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
+						<li><a target="_blank" href="http://hernansartorio.com/jquery-nice-select/">Nice Select</a></li>
+						<li><a target="_blank" href="https://linearicons.com/">Linear Icons</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	
+	<!-- Essential JavaScript Libraries
+	==============================================-->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.all()
+	</script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+</body>
 </html>
